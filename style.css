@@ -1,6 +1,5 @@
 body {
-  font-family: "Poppins", "sans-serif";
-  background-color: black;
+  font-family: "Faculty Glyphic", "sans-serif";
 }
 nav {
   position: absolute !important;
@@ -25,7 +24,8 @@ nav {
   font-size: 0.75rem;
 }
 .hero {
-  background-image: url(cover2.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(cover2.webp);
   min-height: 100vh;
   max-height: 100vh;
   background-size: cover;
@@ -34,7 +34,7 @@ nav {
   align-items: center;
 }
 .hero .shape {
-  width: 50vw;
+  width: 45vw;
   height: 70vh;
   /* background-color: rgba(0, 0, 0, 0.836); */
   background: rgba(56, 48, 46, 0.3);
@@ -48,14 +48,198 @@ nav {
 }
 .hero .shape {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .hero .shape h1 {
   font-family: "Faculty Glyphic", sans-serif;
-  color: white;
-  white-space: nowrap;
+  color: rgb(241, 241, 241);
+  /* white-space: nowrap; */
   font-size: 3rem;
   position: relative;
   bottom: 5%;
+  text-align: center;
+  width: 50rem;
+}
+.shape p {
+  color: rgb(223, 223, 223);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 60%;
+}
+.shape button {
+  border: none;
+  background-color: #ab8865;
+  color: white;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* intro section */
+/* .intro {
+  margin-top: 7rem;
+} */
+
+.window {
+  min-height: 50vh;
+  max-height: 50vh;
+  background-image: url(lobby.webp);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: -7%;
+}
+.parallax2 {
+  background-image: url(food.webp);
+  background-position: 8%;
+}
+
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-text h4 {
+  font-size: 0.7rem;
+  color: #ab8865;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.middle-text h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* info-cards */
+.card {
+  border-radius: 0;
+  height: 100%;
+}
+.info-cards .card-text {
+  font-family: "Poppins", "Faculty Glyphic", "sans-serif";
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2;
+}
+.fa-utensils,
+.fa-water-ladder {
+  color: white;
+  background-color: #ab8865;
+  padding: 1rem;
+  font-size: 2rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+/* testimonials */
+
+.testimonials .swiper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(cover1.webp);
+  min-height: 80vh;
+  max-height: 80vh;
+  background-size: cover;
+}
+.testimonials .swiper-slide.hero {
+  background: none;
+  width: 15vw;
+}
+.swiper-slide.hero .shape {
+  width: 25vw;
+  height: 50vh;
+}
+.swiper-slide.hero .shape h5 {
+  color: rgb(241, 241, 241);
+  /* white-space: nowrap; */
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50rem;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  max-height: 80vh;
+  color: white;
+}
+
+.swiper-slide h5 {
+  width: 50%;
+  line-height: 1.5;
+}
+.name {
+  font-size: 0.7rem;
+  position: relative;
+  top: 5%;
+}
+.fa-quote-left {
+  color: #ab8865;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+/* accommodation */
+.aboveAccomodation h4,
+.belowAccomodation h4 {
+  font-family: "Poppins", "sans-serif";
+  color: #ab8865;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.aboveAccomodation h3,
+.belowAccomodation h3 {
+  font-size: 3rem;
+}
+.accomodation .shape {
+  height: 50vh;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.shape.image-1 {
+  background-image: url(bed-1.webp);
+  background-position: center;
+}
+.shape.image-2 {
+  background-image: url(bed-2.webp);
+}
+.shape.image-3 {
+  background-image: url(bed-3.webp);
+}
+.accomodation .shape h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+/* facilities */
+
+.facilities .img-container {
+  height: 50vh;
+}
+.img-container img {
+  height: 100%;
+  width: 100%;
+}
+.box {
+  height: 30vh;
+  background-color: #ab8865;
+  width: 80%;
+  position: absolute;
 }
