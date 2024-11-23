@@ -215,14 +215,14 @@ nav {
   justify-content: end;
 }
 .shape.image-1 {
-  background-image: url(bed-1.webp);
+  background-image: url(bed-1.jpeg);
   background-position: center;
 }
 .shape.image-2 {
-  background-image: url(bed-2.webp);
+  background-image: url(bed-2.jpeg);
 }
 .shape.image-3 {
-  background-image: url(bed-3.webp);
+  background-image: url(bed-3.jpeg);
 }
 .accomodation .shape h3 {
   color: white;
@@ -231,15 +231,78 @@ nav {
 /* facilities */
 
 .facilities .img-container {
-  height: 50vh;
+  height: 60vh;
 }
 .img-container img {
   height: 100%;
   width: 100%;
 }
 .box {
-  height: 30vh;
+  height: 20vh;
   background-color: #ab8865;
   width: 80%;
   position: absolute;
+  margin-top: -5rem;
+}
+.box h5 {
+  color: white;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.box h6 {
+  color: white;
+  text-align: center;
+  font-size: 0.9 rrem;
+}
+.box p {
+  font-family: "Poppins", "sans-serif";
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 300;
+}
+/* footer */
+.footer {
+  height: 60vh;
+  background-color: #181818;
+  color: white;
+}
+.footer h4 {
+  font-size: 1.2rem;
+}
+.footer h5 {
+  font-size: 0.8rem;
+}
+.footer h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+.center {
+  position: relative;
+  top: 45%;
+}
+.bi-facebook,
+.bi-whatsapp,
+.bi-instagram {
+  font-size: 2rem;
+}
+/*  */
+.copyright {
+  height: 10vh;
+  background-color: #181818;
+  color: white;
+}
+.copyright hr {
+  color: white;
+}
+.copyright small {
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+
+@media (width <= 1000px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
 }
